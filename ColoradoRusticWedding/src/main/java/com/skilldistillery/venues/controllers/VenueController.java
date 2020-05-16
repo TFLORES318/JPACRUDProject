@@ -1,6 +1,8 @@
 package com.skilldistillery.venues.controllers;
 
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,6 +26,14 @@ public class VenueController {
 		model.addAttribute("venue", v);
 		return "venueDetail";
 	}
+	
+	@RequestMapping(path= "listAllVenues.do")
+	public String listVenues(Model model) {
+		List<Venue> venues = dao.findAll();
+		model.addAttribute("venues", venues);
+	  return "allVenuesInDatabase"; 
+	}
+	
 
 	@RequestMapping(path = "insertAVenue.do", method = RequestMethod.POST)
 	public ModelAndView newVenue(Venue venue) {

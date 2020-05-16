@@ -1,5 +1,7 @@
 package com.skilldistillery.venues.data;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
@@ -30,14 +32,17 @@ public class VenueDaoJpaImpl implements VenueDAO {
 	}
 	
 	
+	public List<Venue> findAll() {
+		String jpql = "SELECT v FROM Venue v";  
+		List<Venue> venues; 
+		venues = em.createQuery(jpql, Venue.class).getResultList();
+		return venues;
+	}
 	
 	public Venue updateVenue(Venue venue) {
 		
-	//	Venue updatedVenue = new Venue();
 		Venue updatedVenue = em.find(Venue.class, venue.getId());
 
-		
-		
 		updatedVenue.setName(venue.getName());
 		updatedVenue.setAddress(venue.getAddress());
 		updatedVenue.setPhoneNumber(venue.getPhoneNumber());

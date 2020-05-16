@@ -19,5 +19,11 @@
 
 	</form>
 	
+		<form action="listAllVenues.do" method="GET">
+		<input type="submit" class="button" value="List of Venues" />
+
+
+	</form>
+	
 </body>
 </html>
