@@ -7,6 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <title>New Venue</title>
+<jsp:include page="bootstrapHead.jsp" />
 </head>
 <body>
 
@@ -54,6 +55,6 @@
 				
 			</form>
 
-
+<jsp:include page="bootstrapFoot.jsp" />
 </body>
 </html>

@@ -6,6 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Change Venue Info Page</title>
+<jsp:include page="bootstrapHead.jsp" />
 </head>
 <body>
 
@@ -94,6 +95,6 @@
 			</c:otherwise>
 		</c:choose>
 	</form>
-
+<jsp:include page="bootstrapFoot.jsp" />
 </body>
 </html>

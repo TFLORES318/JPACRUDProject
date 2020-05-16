@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<jsp:include page="bootstrapHead.jsp" />
 <body>
 
 	<form action="insertAVenue.do" method="POST">
@@ -71,6 +72,6 @@
 		<input type="submit" class="button" value="Submit" />
 	</form>
 	
-	
+	<jsp:include page="bootstrapFoot.jsp" />
 </body>
 </html>

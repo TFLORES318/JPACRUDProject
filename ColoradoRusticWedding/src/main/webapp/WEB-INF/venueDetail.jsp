@@ -6,6 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Venue Details</title>
+<jsp:include page="bootstrapHead.jsp" />
 </head>
 <body>
 	<c:choose>
@@ -43,5 +44,7 @@
 			<p>No Venue exists with that ID</p>
 		</c:otherwise>
 	</c:choose>
+	
+	<jsp:include page="bootstrapFoot.jsp" />
 </body>
 </html>

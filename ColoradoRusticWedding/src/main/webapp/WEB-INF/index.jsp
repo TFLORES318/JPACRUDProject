@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>RusticWedding</title>
+<jsp:include page="bootstrapHead.jsp" />
 </head>
 <body>
 	<center><h1>Rustic Wedding Venue Finder</h1></center>
@@ -31,5 +32,6 @@
 
 	</form>
 	
+	<jsp:include page="bootstrapFoot.jsp" />
 </body>
 </html>
