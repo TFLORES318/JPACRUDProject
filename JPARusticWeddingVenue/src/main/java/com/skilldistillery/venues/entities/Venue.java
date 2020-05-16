@@ -144,7 +144,11 @@ public class Venue {
 
 	@Override
 	public String toString() {
-		return "Venue [id=" + id + ", name=" + name + "]";
+		return "Venue [id=" + id + ", name=" + name + ", address=" + address + ", phoneNumber=" + phoneNumber
+				+ ", capacity=" + capacity + ", fullService=" + fullService + ", cost=" + cost
+				+ ", seasonalAvailability=" + seasonalAvailability + ", handicapAccessible=" + handicapAccessible
+				+ ", numOfBathrooms=" + numOfBathrooms + "]";
 	}
+
 
 }
