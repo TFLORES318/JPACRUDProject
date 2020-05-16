@@ -44,6 +44,15 @@ class VenueTest {
 	void test() {
 		assertNotNull(venue);
 		assertEquals("Evergreen Red Barn", venue.getName());
+		assertEquals("27826 Alabraska Ln, Evergreen, CO 80439", venue.getAddress());
+		assertEquals("3036741838", venue.getPhoneNumber());
+		assertEquals(115, venue.getCapacity());
+		assertEquals(false, venue.isFullService());
+		assertEquals(4500, venue.getCost());
+		assertEquals("All Year Round", venue.getSeasonalAvailability());
+		assertEquals(false, venue.isHandicapAccessible());
+		assertEquals(2, venue.getNumOfBathrooms());
+		
 	}
 
 }
