@@ -8,6 +8,9 @@
 </head>
 <body>
 <h1>Rustic Wedding Venues in Beautiful Colorado</h1>
-
+<form action="getVenue.do" method="GET">
+Venue ID: <input type="text" name="vid" /> <input type="submit"
+			value="Show Venue" />	
+</form>
 </body>
 </html>
