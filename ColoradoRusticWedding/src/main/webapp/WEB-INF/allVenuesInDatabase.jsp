@@ -26,6 +26,11 @@
 		</c:forEach>
 	</ul>
 
+	<form action="/" a href="index.do" method="POST">
+		<input type="submit" class="button" value="Home" />
+
+	</form>
+
 
 </body>
 </html>
