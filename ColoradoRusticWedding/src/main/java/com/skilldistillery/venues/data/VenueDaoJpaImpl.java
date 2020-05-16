@@ -31,6 +31,13 @@ public class VenueDaoJpaImpl implements VenueDAO {
 		return em.find(Venue.class, id);
 	}
 	
+	public Venue findByVenueNameKeyword(String keyword) {
+
+		String jpql = "SELECT v FROM Venue v WHERE v.name = :namey";
+		Venue venue = em.createQuery(jpql, Venue.class).setParameter("namey", keyword).getSingleResult();	
+		return venue;
+	}
+	
 	
 	public List<Venue> findAll() {
 		String jpql = "SELECT v FROM Venue v";  

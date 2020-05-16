@@ -19,6 +19,13 @@ public class VenueController {
 
 	@Autowired
 	private VenueDAO dao;
+	
+	@RequestMapping("/")
+	public ModelAndView index() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("index");
+		return mv;
+	}
 
 	@RequestMapping(path = "getVenue.do")
 	public String findVenue(@RequestParam int vid, Model model) {
@@ -34,6 +41,12 @@ public class VenueController {
 	  return "allVenuesInDatabase"; 
 	}
 	
+	@RequestMapping(path = "getVenueByName.do")
+	public String findVenueByName(@RequestParam String venueName, Model model) {
+		Venue v = dao.findByVenueNameKeyword(venueName);
+		model.addAttribute("venue", v);
+		return "venueDetail";
+	}
 
 	@RequestMapping(path = "insertAVenue.do", method = RequestMethod.POST)
 	public ModelAndView newVenue(Venue venue) {

@@ -32,6 +32,11 @@
 					type="hidden" name="id" value="${venue.id}" /> 
 				
 			</form>
+			
+			<form action="/" a href="index.do" method="POST">
+				<input type="submit" class="button" value="Home" />
+				
+			</form>
 
 		</c:when>
 		<c:otherwise>

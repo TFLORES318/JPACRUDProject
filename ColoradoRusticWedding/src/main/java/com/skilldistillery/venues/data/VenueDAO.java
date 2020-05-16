@@ -11,5 +11,6 @@ public interface VenueDAO {
 	public Venue updateVenue(Venue venue);
 	public boolean destroy(int id);
 	public List<Venue> findAll();
+	public Venue findByVenueNameKeyword(String keyword); 
 
 }
