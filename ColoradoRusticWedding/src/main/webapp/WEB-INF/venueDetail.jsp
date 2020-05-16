@@ -18,6 +18,7 @@
 			<h3>Full Service: ${venue.fullService }</h3>
 			<h3>Cost: ${venue.cost }</h3>
 			<h3>Seasonal Availability: ${venue.seasonalAvailability }</h3>
+			<h3>Handicap Accessible: ${venue.handicapAccessible }</h3>
 			<h3>Number of Bathrooms on Site: ${venue.numOfBathrooms }</h3>
 
 			<form action="venueEditor.do" method="POST">
