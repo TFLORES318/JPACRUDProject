@@ -31,9 +31,9 @@ public class VenueDaoJpaImpl implements VenueDAO {
 	
 	
 	
-	public Venue updateVenue(int id, Venue venue) {
+	public Venue updateVenue(Venue venue) {
 		
-		Venue updatedVenue = em.find(Venue.class, id);
+		Venue updatedVenue = new Venue();
 		
 		updatedVenue.setName(venue.getName());
 		updatedVenue.setAddress(venue.getAddress());
@@ -52,9 +52,10 @@ public class VenueDaoJpaImpl implements VenueDAO {
 		
 	}
 	
+	
 	public boolean destroy(int id) {
 		
-		Venue venue =em.find(Venue.class, id);
+		Venue venue = em.find(Venue.class, id);
 		
 		em.remove(venue);
 		

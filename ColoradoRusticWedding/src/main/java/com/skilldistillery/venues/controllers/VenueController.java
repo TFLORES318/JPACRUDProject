@@ -42,21 +42,35 @@ public class VenueController {
 
 	}
 
-	@RequestMapping(path = "updateVenue.do", method = RequestMethod.POST)
-	public ModelAndView changeVenueInfo() {
+	@RequestMapping(path = "venueEditor.do", params = "id", method = RequestMethod.POST)
+	public ModelAndView editPage(int id) {
 		ModelAndView mv = new ModelAndView();
+		Venue venue;
+		venue = dao.findById(id);
+		mv.addObject(venue);
 		mv.setViewName("changeVenueInfo");
+		return mv;
+	}
+
+	@RequestMapping(path = "updateVenueInformation.do", method = RequestMethod.POST)
+	public ModelAndView changeVenueInfo(Venue venue) {
+		ModelAndView mv = new ModelAndView();
+		dao.updateVenue(venue);
+		mv.addObject("venue", venue);
+		mv.setViewName("index");
 		return mv;
 
 	}
-
-	@RequestMapping(path = "venueEditor.do", params = "id")
-	public ModelAndView editPage(int id, Venue venue) {
+	
+	@RequestMapping(path = "removeVenue.do", method = RequestMethod.POST)
+	public ModelAndView removeVenue(int id) {
 		ModelAndView mv = new ModelAndView();
-			Venue updatedVenue = dao.updateVenue(id, venue);
-			mv.addObject(updatedVenue);
-		mv.setViewName("successfullyAddedVenue");
+		boolean deleted = dao.destroy(id);
+		if (deleted == true) {
+			mv.setViewName("index");			
+		}
 		return mv;
+
 	}
 
 }

@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<form action="venueEditor.do" method="POST">
+<form action="updateVenueInformation.do" method="POST">
 
 		<c:choose>
 			<c:when test="${! empty venue}">
@@ -20,7 +20,7 @@
 						<td>Name:</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="title" value="${venue.title}"
+						<td><input type="text" name="name" value="${venue.name}"
 							size="25" /></td>
 					</tr>
 					<tr>
@@ -76,7 +76,7 @@
 						<td>Number of Bathrooms:</td>
 					<tr>
 						<td><input type="text" name="numOfBathrooms"
-						value="${venue.numOfBathrooms}" size="6" /></td>
+							value="${venue.numOfBathrooms}" size="6" /></td>
 					</tr>
 					<tr>
 						<td>
@@ -89,10 +89,10 @@
 					</tr>
 				</table>
 			</c:when>
-			</c:choose>
 			<c:otherwise>
 				No Venue Found
-</c:otherwise>
+			</c:otherwise>
+		</c:choose>
 	</form>
 
 </body>
