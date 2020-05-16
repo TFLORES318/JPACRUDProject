@@ -60,6 +60,87 @@ public class Venue {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+
+	public String getAddress() {
+		return address;
+	}
+
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+
+	public int getCapacity() {
+		return capacity;
+	}
+
+
+	public void setCapacity(int capacity) {
+		this.capacity = capacity;
+	}
+
+
+	public boolean isFullService() {
+		return fullService;
+	}
+
+
+	public void setFullService(boolean fullService) {
+		this.fullService = fullService;
+	}
+
+
+	public int getCost() {
+		return cost;
+	}
+
+
+	public void setCost(int cost) {
+		this.cost = cost;
+	}
+
+
+	public String getSeasonalAvailability() {
+		return seasonalAvailability;
+	}
+
+
+	public void setSeasonalAvailability(String seasonalAvailability) {
+		this.seasonalAvailability = seasonalAvailability;
+	}
+
+
+	public boolean isHandicapAccessible() {
+		return handicapAccessible;
+	}
+
+
+	public void setHandicapAccessible(boolean handicapAccessible) {
+		this.handicapAccessible = handicapAccessible;
+	}
+
+
+	public int getNumOfBathrooms() {
+		return numOfBathrooms;
+	}
+
+
+	public void setNumOfBathrooms(int numOfBathrooms) {
+		this.numOfBathrooms = numOfBathrooms;
+	}
+
 
 	@Override
 	public String toString() {
