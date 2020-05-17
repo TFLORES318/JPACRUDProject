@@ -30,3 +30,11 @@ h3 {
 	font-size: 15px;
 	font-family: Trebuchet MS, sans-serif;
 }
+
+.bottomRight {
+   position: fixed;
+   bottom: 0;
+   right: 50px;
+}
+
+
