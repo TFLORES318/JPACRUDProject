@@ -28,13 +28,13 @@
 
 			</form>
 		</c:forEach>
-	</ul>
 <br></br>
 <br></br>
-	<form action="/" a href="index.do" method="POST">
-		<center><input type="submit" id="thatButton" class="button" value="Home" /></center>
-
+	<li><form action="/" a href="index.do" method="POST">
+		<center><input type="submit" id="thatButton" class="button" value="Home" /></center></li>
 	</form>
+	</ul>
+
 
 <jsp:include page="bootstrapFoot.jsp" />
 </body>
