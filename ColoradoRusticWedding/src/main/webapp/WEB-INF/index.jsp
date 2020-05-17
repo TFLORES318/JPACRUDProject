@@ -6,10 +6,14 @@
 <meta charset="UTF-8">
 <title>RusticWedding</title>
 <jsp:include page="bootstrapHead.jsp" />
+
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/weddingvenues.css">
+
 </head>
 <body>
 	<center><h1>Rustic Wedding Venue Finder</h1></center>
 	<p><h3><em>Best suit your Client's needs in Beautiful Colorado</em></h3></p>
+	<div class="options">
 	<form action="getVenue.do" method="GET">
 		ID: <input type="text" name="vid" /> <input type="submit"
 			value="Show Venue" />
@@ -31,7 +35,7 @@
 
 
 	</form>
-	
+	</div>
 	<jsp:include page="bootstrapFoot.jsp" />
 </body>
 </html>
