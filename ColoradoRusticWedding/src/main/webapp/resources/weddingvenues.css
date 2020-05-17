@@ -16,8 +16,8 @@ h1 {
 }
 
 h3 {
-	color: white;
-	text-align: right;
+	color: #fff7ed;
+	text-align: left;
 	font-family: Bradley Hand, cursive;
 	font-style: italic;
 }
@@ -79,10 +79,26 @@ ul>li {
 	font-family: Trebuchet MS, sans-serif;
 }
 
-h4 {
+h4, h2 {
 	color: #fff7ed;
 	text-align: left;
 	font-family: Bradley Hand, cursive;
 	font-style: strong;
 	font-size: 20px;
+}
+
+table {
+	color: #fff7ed;
+	text-align: left;
+	font-style: strong;
+	font-size: 20px;
+	font-family: Bradley Hand, cursive;
+}
+
+#none {
+	color: #fff7ed;
+	text-align: left;
+	font-family: Bradley Hand, cursive;
+	font-style: italic;
+	font-size: 30px;
 }

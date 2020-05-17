@@ -8,12 +8,13 @@
 <meta charset="UTF-8">
 <title>New Venue</title>
 <jsp:include page="bootstrapHead.jsp" />
+<link type="text/css" rel="stylesheet"
+	href="${pageContext.request.contextPath}/resources/weddingvenues.css">
 </head>
 <body>
 
 
 	<h1>Your venue was successfully added to the system!</h1>
-	<h2>New Venue:</h2>
 	<c:choose>
 		<c:when test="${! empty venue}">
 			<table>

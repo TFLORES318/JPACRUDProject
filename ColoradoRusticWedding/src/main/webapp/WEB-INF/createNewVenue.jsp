@@ -5,15 +5,18 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-</head>
 <jsp:include page="bootstrapHead.jsp" />
+
+<link type="text/css" rel="stylesheet"
+	href="${pageContext.request.contextPath}/resources/weddingvenues.css">
+</head>
 <body>
 
 	<form action="insertAVenue.do" method="POST">
 		<h1>Add a Rustic Wedding Venue</h1>
-		<h2>
+		<h3>
 			<em>Must be in Colorado</em>
-		</h2>
+		</h3>
 		<table>
 			<tr>
 				<td>Name:</td>

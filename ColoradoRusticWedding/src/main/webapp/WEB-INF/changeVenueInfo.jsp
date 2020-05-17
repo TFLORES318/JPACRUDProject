@@ -7,6 +7,8 @@
 <meta charset="UTF-8">
 <title>Change Venue Info Page</title>
 <jsp:include page="bootstrapHead.jsp" />
+<link type="text/css" rel="stylesheet"
+	href="${pageContext.request.contextPath}/resources/weddingvenues.css">
 </head>
 <body>
 
@@ -29,13 +31,13 @@
 					</tr>
 					<tr>
 						<td><input type="text" name="address"
-							value="${venue.address}" size="100" /></td>
+							value="${venue.address}" size="40" /></td>
 					</tr>
 					<tr>
 						<td>Phone Number:</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="phoneNumber" size="6"
+						<td><input type="text" name="phoneNumber" size="16"
 							value="${venue.phoneNumber}" /></td>
 					</tr>
 					<tr>
@@ -56,15 +58,15 @@
 						<td>Cost:</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="cost" size="4"
-							value="${venue.cost}" size="6" /></td>
+						<td><input type="text" name="cost" size="11"
+							value="${venue.cost}" size="11" /></td>
 					</tr>
 					<tr>
 						<td>Seasonal Availability:</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="seasonalAvailability" size="4"
-							value="${venue.seasonalAvailability}" size="6" /></td>
+						<td><input type="text" name="seasonalAvailability" size="15"
+							value="${venue.seasonalAvailability}" size="15" /></td>
 					</tr>
 					<tr>
 						<td>Handicap Accessible:</td>
@@ -77,14 +79,18 @@
 						<td>Number of Bathrooms:</td>
 					<tr>
 						<td><input type="text" name="numOfBathrooms"
-							value="${venue.numOfBathrooms}" size="6" /></td>
+							value="${venue.numOfBathrooms}" size="4" /></td>
 					</tr>
 					<tr>
 						<td>
 							<table>
 								<tr>
-									<td><input type="submit" class="button" value="Submit" /></td>
+									<td><input type="submit" class="button" id="thatButton" value="Submit" /></td>
 								</tr>
+								<tr>
+								<td><form action="/" a href="index.do" method="POST">
+				<input type="submit" class="button" id="thatButton" value="Home" /></form></td>
+				</tr>
 							</table>
 						</td>
 					</tr>

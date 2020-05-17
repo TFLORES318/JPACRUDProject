@@ -44,7 +44,7 @@
 
 		</c:when>
 		<c:otherwise>
-			<p>No Venue exists with that ID</p>
+			<p id="none">No Venue exists with that ID</p>
 			
 			<form action="/" a href="index.do" method="POST">
 				<input type="submit" class="button" value="Home" />
