@@ -7,28 +7,32 @@
 <meta charset="UTF-8">
 <title>Colorado Rustic Wedding Venues</title>
 <jsp:include page="bootstrapHead.jsp" />
+
+<link type="text/css" rel="stylesheet"
+	href="${pageContext.request.contextPath}/resources/weddingvenues.css">
 </head>
 <body>
 
-	<ul>
+<ul id="checkBoxGrid">
 		<c:forEach var="venue" items="${venues}">
-			<li>${venue.id}${venue.name}</li>
+			<li>${venue.name}</li>
 			<form action="venueEditor.do" method="POST">
-				<input type="submit" class="button" value="Change Venue Info" /> <input
-					type="hidden" name="id" value="${venue.id}" />
+				<center><input type="submit" id="thisButton" class="button" value="Change Venue Info" /></center> 
+				<input type="hidden" name="id" value="${venue.id}" />
 
 			</form>
 			<form action="removeVenue.do" method="POST">
-				<input type="submit" class="button"
-					value="Remove Venue From Database" /> <input type="hidden"
+				<center><input type="submit" id="thisButton" class="button"
+					value="Remove Venue From Database" /></center> <input type="hidden"
 					name="id" value="${venue.id}" />
 
 			</form>
 		</c:forEach>
 	</ul>
-
+<br></br>
+<br></br>
 	<form action="/" a href="index.do" method="POST">
-		<input type="submit" class="button" value="Home" />
+		<center><input type="submit" id="thatButton" class="button" value="Home" /></center>
 
 	</form>
 

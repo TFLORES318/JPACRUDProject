@@ -23,12 +23,12 @@
 
 		<div class="options">
 			<form action="getVenue.do" method="GET">
-				ID: <input type="text" name="vid" /> <input type="submit"
+				Unique ID: <input type="text" name="vid" /> <input type="submit"
 					class="button" value="Show Venue" />
 			</form>
 
 			<form action="getVenueByName.do" method="GET">
-				Name: <input type="text" name="venueName" /> <input type="submit"
+				Name of Venue: <input type="text" name="venueName" /> <input type="submit"
 					class="button" value="Show Venue Info" />
 			</form>
 

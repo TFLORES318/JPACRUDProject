@@ -1,14 +1,12 @@
-
 body {
- 
-  background-image: url(https://1bldtr2aohsv3ak7si7vnbpd-wpengine.netdna-ssl.com/wp-content/uploads/2018/10/Evergreen-Red-Barn_0015_16.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-  border-top:40px solid #3b2d09;
-  
+	background-image:
+		url(https://1bldtr2aohsv3ak7si7vnbpd-wpengine.netdna-ssl.com/wp-content/uploads/2018/10/Evergreen-Red-Barn_0015_16.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #464646;
+	border-top: 40px solid #3b2d09;
 }
 
 h1 {
@@ -32,9 +30,58 @@ h3 {
 }
 
 .bottomRight {
-   position: fixed;
-   bottom: 0;
-   right: 50px;
+	position: fixed;
+	bottom: 0;
+	right: 50px;
 }
 
+.button {
+	transition-duration: 0.4s;
+	border-radius: 4px;
+	height: 30px;
+	width: 160px;
+	margin-top: 4px;
+}
 
+.button:hover {
+	background-color: #b0a7a1;
+	color: white;
+	margin-top: 4px;
+}
+
+#checkBoxGrid {
+	list-style: none;
+}
+
+ul>li {
+	color: white;
+	font-size: 40px;
+	font-family: Bradley Hand, cursive;
+	text-align: center;
+}
+
+#thisButton {
+	transition-duration: 0.4s;
+	border-radius: 4px;
+	height: 25px;
+	width: 200px;
+	margin-top: 4px;
+	font-size: 12px;
+}
+
+#thatButton {
+	transition-duration: 0.4s;
+	border-radius: 4px;
+	height: 35px;
+	width: 200px;
+	margin-top: 4px;
+	font-size: 20px;
+}
+
+h4 {
+	color: #fff7ed;
+	text-align: left;
+	font-family: Bradley Hand, cursive;
+	font-style: strong;
+	font-size: 20px;
+}
