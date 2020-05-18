@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-	color: white;
+	color: #fff7ed;
 	font-size: 80px;
 	font-family: Bradley Hand, cursive
 }
@@ -24,7 +24,7 @@ h3 {
 
 .options {
 	text-align: right;
-	color: white;
+	color: #fff7ed;
 	font-size: 15px;
 	font-family: Trebuchet MS, sans-serif;
 }
@@ -45,7 +45,7 @@ h3 {
 
 .button:hover {
 	background-color: #b0a7a1;
-	color: white;
+	color: #fff7ed;
 	margin-top: 4px;
 }
 
@@ -54,7 +54,7 @@ h3 {
 }
 
 ul>li {
-	color: white;
+	color: #fff7ed;
 	font-size: 40px;
 	font-family: Bradley Hand, cursive;
 	text-align: center;
