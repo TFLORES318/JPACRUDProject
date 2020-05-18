@@ -48,7 +48,7 @@
 							value="${venue.capacity}" size="6" /></td>
 					</tr>
 					<tr>
-						<td>Full Service Option:</td>
+						<td>Full Service Option (Yes or No):</td>
 					</tr>
 					<tr>
 						<td><input type="text" name="fullService"
@@ -62,14 +62,14 @@
 							value="${venue.cost}" size="11" /></td>
 					</tr>
 					<tr>
-						<td>Seasonal Availability:</td>
+						<td>Seasonal Availability (Seasonal or All Year Round):</td>
 					</tr>
 					<tr>
 						<td><input type="text" name="seasonalAvailability" size="15"
 							value="${venue.seasonalAvailability}" size="15" /></td>
 					</tr>
 					<tr>
-						<td>Handicap Accessible:</td>
+						<td>Handicap Accessible (Yes or No):</td>
 					</tr>
 					<tr>
 						<td><input type="text" name="handicapAccessible"

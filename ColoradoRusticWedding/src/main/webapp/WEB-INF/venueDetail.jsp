@@ -13,7 +13,7 @@
 </head>
 <body>
 	<c:choose>
-		<c:when test="${! empty venue}">
+		<c:when test="${! empty venue }">
 			<h1>${venue.name}</h1>
 			<h4>ID: ${venue.id}</h4>
 			<h4>Address: ${venue.address}</h4>

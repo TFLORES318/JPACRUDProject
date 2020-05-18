@@ -43,6 +43,7 @@
 				</tr>
 				<tr>
 					<td>Handicap Accessible: ${venue.handicapAccessible }</td>
+				</tr>
 				<tr>
 					<td>Number of Bathrooms on Site: ${venue.numOfBathrooms }</td>
 				</tr>

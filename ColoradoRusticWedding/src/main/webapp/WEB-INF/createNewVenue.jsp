@@ -42,7 +42,7 @@
 			<tr>
 				<td><input type="text" name="capacity" size="25" /></td>
 			<tr>
-				<td>Full Service Option:</td>
+				<td>Full Service Option (Yes or No):</td>
 			</tr>
 			<tr>
 				<td><input type="text" name="fullService" size="25" /></td>
@@ -54,13 +54,13 @@
 				<td><input type="text" name="cost" size="25" /></td>
 			</tr>
 			<tr>
-				<td>Seasonal Availability:</td>
+				<td>Seasonal Availability (Seasonal or All Year Round):</td>
 			</tr>
 			<tr>
 				<td><input type="text" name="seasonalAvailability" size="25" /></td>
 			</tr>
 			<tr>
-				<td>Handicap Accessible:</td>
+				<td>Handicap Accessible (Yes or No):</td>
 			</tr>
 			<tr>
 				<td><input type="text" name="handicapAccessible" size="25" /></td>
