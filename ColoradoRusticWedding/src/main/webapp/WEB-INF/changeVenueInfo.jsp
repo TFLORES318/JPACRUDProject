@@ -88,7 +88,7 @@
 									<td><input type="submit" class="button" id="thatButton" value="Submit" /></td>
 								</tr>
 								<tr>
-								<td><form action="/" a href="index.do" method="POST">
+								<td><form action="home.do" method="POST">
 				<input type="submit" class="button" id="thatButton" value="Home" /></form></td>
 				</tr>
 							</table>

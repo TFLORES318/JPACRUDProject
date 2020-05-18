@@ -30,7 +30,7 @@
 		</c:forEach>
 <br></br>
 <br></br>
-	<li><form action="/" a href="index.do" method="POST">
+	<li><form action="home.do" method="POST">
 		<center><input type="submit" id="thatButton" class="button" value="Home" /></center></li>
 	</form>
 	</ul>

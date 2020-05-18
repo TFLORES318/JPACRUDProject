@@ -46,7 +46,7 @@
 		<c:otherwise>
 			<p id="none">No Venue exists with that ID</p>
 			
-			<form action="/" a href="index.do" method="POST">
+			<form action="home.do" method="POST">
 				<input type="submit" class="button" value="Home" />
 				
 			</form>

@@ -20,7 +20,7 @@ public class VenueController {
 	@Autowired
 	private VenueDAO dao;
 	
-	@RequestMapping("/")
+	@RequestMapping(path= {"/", "home.do"})
 	public ModelAndView index() {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("index");

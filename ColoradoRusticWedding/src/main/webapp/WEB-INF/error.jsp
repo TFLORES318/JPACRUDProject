@@ -10,7 +10,7 @@
 <body>
 
 <h1>Please excuse our technical difficulties!</h1>
-<form action="/" a href="index.do" method="POST">
+<form action="home.do" method="POST">
 				<input type="submit" class="button" value="Go Back Home" />
 				
 			</form>
