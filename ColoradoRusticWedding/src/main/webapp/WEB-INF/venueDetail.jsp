@@ -37,7 +37,7 @@
 				
 			</form>
 			
-			<form action="/" a href="index.do" method="POST">
+			<form action="home.do" method="POST">
 				<input type="submit" class="button" id="thisButton" value="Home" />
 				
 			</form>

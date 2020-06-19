@@ -1,9 +1,11 @@
 ## JPACRUDProject
 
+Testing
+
 ### Overview (what the project is, how to do it, how to run it)
 - This program allows the user who is the wedding planner expert to access information about rustic wedding venues located in Colorado.
 
-- On the homepage, the expert will be able to search a wedding venue by it's ID (known by wedding planners specifically), can search by the name of the venue or can check out a list of venues already in the database. 
+- On the homepage, the expert will be able to search a wedding venue by it's ID (known by wedding planners specifically), can search by the name of the venue or can check out a list of venues already in the database.
 
 - When the expert finds a wedding venue and it's information, the wedding venue data can be manipulated based on any updates the venue had.
 
@@ -19,7 +21,7 @@ The DAO implementation class uses entity manager which is able to access the dat
 
 JPA annotations were used in this project to allow mapping to database.
 
-The controller allows access to the DAO methods and is the link between the front end and back end. 
+The controller allows access to the DAO methods and is the link between the front end and back end.
 
 JSP pages accept input and can pass this to the controller when calling methods from the data. The JSP pages are set as our views as well when clicking a link.
 
@@ -41,7 +43,7 @@ JSP pages accept input and can pass this to the controller when calling methods 
 ### Lessons Learned
 - This project was a good addition to last week's project and helped me understand and get more hands on experience with the JSPs and controller.
 - Using entity manager and understanding various methods it has.
-- JPQL practice. 
+- JPQL practice.
 - MVC practice.
 
 
